@@ -38,6 +38,7 @@
           class="form-control"
           id="newUserName"
           placeholder="Zack Morris"
+          required
         />
       </div>
 
@@ -47,7 +48,7 @@
           type="url"
           class="form-control"
           id="newUserPic"
-          placeholder="image url"
+          placeholder="Image Url"
         />
       </div>
       <br /><br />
@@ -55,11 +56,8 @@
         <label for="question1"
           ><h6>I prefer playing sports rather than watching them.</h6></label
         >
-        <select
-          class="form-control form-control-sm"
-          id="question1"
-          data-placeholder=""
-        >
+        <select class="form-control form-control-sm" id="question1">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -69,12 +67,9 @@
       </div>
 
       <div class="form-group">
-        <label for="question2"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question2"
-          data-placeholder=""
-        >
+        <label for="question2"><h6>I am a nightowl.</h6></label>
+        <select class="form-control form-control-sm" id="question2">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -84,12 +79,9 @@
       </div>
 
       <div class="form-group">
-        <label for="question3"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question3"
-          data-placeholder=""
-        >
+        <label for="question3"><h6>War is the solution to peace.</h6></label>
+        <select class="form-control form-control-sm" id="question3">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -99,12 +91,9 @@
       </div>
 
       <div class="form-group">
-        <label for="question4"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question4"
-          data-placeholder=""
-        >
+        <label for="question4"><h6>I have a fear of heights.</h6></label>
+        <select class="form-control form-control-sm" id="question4">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -114,12 +103,9 @@
       </div>
 
       <div class="form-group">
-        <label for="question5"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question5"
-          data-placeholder=""
-        >
+        <label for="question5"><h6>I enjoy eating exotic meats.</h6></label>
+        <select class="form-control form-control-sm" id="question5">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -129,12 +115,11 @@
       </div>
 
       <div class="form-group">
-        <label for="question6"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question6"
-          data-placeholder=""
+        <label for="question6"
+          ><h6>I feel as though I am forever alone.</h6></label
         >
+        <select class="form-control form-control-sm" id="question6">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -144,12 +129,9 @@
       </div>
 
       <div class="form-group">
-        <label for="question7"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question7"
-          data-placeholder=""
-        >
+        <label for="question7"><h6>Tax the rich.</h6></label>
+        <select class="form-control form-control-sm" id="question7">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -159,12 +141,11 @@
       </div>
 
       <div class="form-group">
-        <label for="question8"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question8"
-          data-placeholder=""
+        <label for="question8"
+          ><h6>I would rather watch a movie than read a book.</h6></label
         >
+        <select class="form-control form-control-sm" id="question8">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -174,12 +155,11 @@
       </div>
 
       <div class="form-group">
-        <label for="question9"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question9"
-          data-placeholder=""
+        <label for="question9"
+          ><h6>I believe in survival of the fittest.</h6></label
         >
+        <select class="form-control form-control-sm" id="question9">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -189,12 +169,9 @@
       </div>
 
       <div class="form-group">
-        <label for="question10"><h6></h6></label>
-        <select
-          class="form-control form-control-sm"
-          id="question10"
-          data-placeholder=""
-        >
+        <label for="question10"><h6>This survey is a joke.</h6></label>
+        <select class="form-control form-control-sm" id="question10">
+          <option value=""></option>
           <option value="1">1 (Strongly disagree)</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -212,6 +189,7 @@
       />
       <br />
       <br />
+
       <!-- Modal -->
       <div
         class="modal fade"
@@ -234,9 +212,7 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body" id="bffPicModal">
-              ...
-            </div>
+            <div class="modal-body" id="bffPicModal"></div>
             <div class="modal-footer">
               <button
                 type="button"
@@ -252,40 +228,59 @@
     </div>
     <script>
       $("#submitNewUser").on("click", () => {
-        var newUser = {
-          name: $("#newUserName").val(),
-          photo: $("#newUserPic").val(),
-          scores: [
-            $("#question1").val(),
-            $("#question2").val(),
-            $("#question3").val(),
-            $("#question4").val(),
-            $("#question5").val(),
-            $("#question6").val(),
-            $("#question7").val(),
-            $("#question8").val(),
-            $("#question9").val(),
-            $("#question10").val()
-          ]
-        };
-        $.post("/api/friends", newUser, data => {
-          console.log(data);
-          $("#bffNameModal").text(`Your Bff is: ${data.name}`);
-          $("#bffPicModal").append(`Your Bff is: <img src="${data.photo}">`);
-          //Clear input fields after submit
-          $("#newUserName").val("");
-          $("#newUserPic").val("");
-          $("#question1").val("");
-          $("#question2").val("");
-          $("#question3").val("");
-          $("#question4").val("");
-          $("#question5").val("");
-          $("#question6").val("");
-          $("#question7").val("");
-          $("#question8").val("");
-          $("#question9").val("");
-          $("#question10").val("");
-        });
+        if (
+          $("#newUserName").val() === "" ||
+          $("#newUserPic").val() === "" ||
+          $("#question1").val() === "" ||
+          $("#question2").val() === "" ||
+          $("#question3").val() === "" ||
+          $("#question4").val() === "" ||
+          $("#question5").val() === "" ||
+          $("#question6").val() === "" ||
+          $("#question7").val() === "" ||
+          $("#question8").val() === "" ||
+          $("#question9").val() === "" ||
+          $("#question10").val() === ""
+        ) {
+          $("#bffPicModal").text("Please fill out entire survey!");
+        } else {
+          var newUser = {
+            name: $("#newUserName").val(),
+            photo: $("#newUserPic").val(),
+            scores: [
+              $("#question1").val(),
+              $("#question2").val(),
+              $("#question3").val(),
+              $("#question4").val(),
+              $("#question5").val(),
+              $("#question6").val(),
+              $("#question7").val(),
+              $("#question8").val(),
+              $("#question9").val(),
+              $("#question10").val()
+            ]
+          };
+          $.post("/api/friends", newUser, data => {
+            console.log(data);
+            $("#bffNameModal").append(`Your Bff is: <h4>${data.name}</h4>`);
+            $("#bffPicModal").append(
+              `<img src="${data.photo}" class="mx-auto d-block">`
+            );
+            //Clear input fields after submit
+            $("#newUserName").val("");
+            $("#newUserPic").val("");
+            $("#question1").val("");
+            $("#question2").val("");
+            $("#question3").val("");
+            $("#question4").val("");
+            $("#question5").val("");
+            $("#question6").val("");
+            $("#question7").val("");
+            $("#question8").val("");
+            $("#question9").val("");
+            $("#question10").val("");
+          });
+        }
       });
     </script>
   </body>

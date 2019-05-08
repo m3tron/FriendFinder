@@ -1,3 +1,4 @@
+//array of objects of fake friends
 var friends = [
   {
     name: "Bruce Wayne",

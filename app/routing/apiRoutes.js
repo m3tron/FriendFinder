@@ -9,6 +9,7 @@ module.exports = function(app) {
     var newUserScore = req.body.scores;
     var friendDiff = [];
 
+    //returns score of a new user or previous member
     function scoreSum(arr) {
       var newArr = [];
       var score = 0;
@@ -19,15 +20,24 @@ module.exports = function(app) {
       return score;
     }
 
+    //calculates the difference of scores between new user and all previous member
+    //pushes results into an array
     for (var i = 0; i < friendsData.length; i++) {
       friendDiff.push(
         Math.abs(scoreSum(friendsData[i].scores) - scoreSum(newUserScore))
       );
     }
 
+    //get index of lowest difference
     var bffIndex = friendDiff.indexOf(Math.min(...friendDiff));
+
+    //finds friend at that index
     var bff = friendsData[bffIndex];
+
+    //sends friend as object
     res.json(bff);
-    friendsData.push(req.body); //move to end
+
+    //pushes new member into previous members array
+    friendsData.push(req.body);
   });
 };
