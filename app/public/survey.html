@@ -217,6 +217,7 @@
               <button
                 type="button"
                 class="btn btn-secondary"
+                id="modalClose"
                 data-dismiss="modal"
               >
                 Close
@@ -264,8 +265,14 @@
             console.log(data);
             $("#bffNameModal").append(`Your Bff is: <h4>${data.name}</h4>`);
             $("#bffPicModal").append(
-              `<img src="${data.photo}" class="mx-auto d-block">`
+              `<img style="max-width: 100%" src="${
+                data.photo
+              }" class="mx-auto d-block">`
             );
+            $("#modalClose").on("click", () => {
+              $("#bffNameModal").empty();
+              $("#bffPicModal").empty();
+            });
             //Clear input fields after submit
             $("#newUserName").val("");
             $("#newUserPic").val("");
