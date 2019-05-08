@@ -242,7 +242,7 @@
           $("#question9").val() === "" ||
           $("#question10").val() === ""
         ) {
-          $("#bffPicModal").text("Please fill out entire survey!");
+          $("#bffPicModal").append("Please fill out entire survey!");
         } else {
           var newUser = {
             name: $("#newUserName").val(),
